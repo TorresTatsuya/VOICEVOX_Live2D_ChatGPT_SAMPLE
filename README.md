@@ -1,0 +1,1 @@
+# VOICEVOX_Live2D_ChatGPT_SAMPLE
