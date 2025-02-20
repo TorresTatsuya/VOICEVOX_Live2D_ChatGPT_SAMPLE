@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  node:
+    image: "node:20-alpine"
+    container_name: myweb-node
+    working_dir: /home/node/app
+    volumes:
+      - ./app:/home/node/app
+    expose:
+      - "8081"
+      - "3000"
+    ports:
+      - "8001:8001"
+      - "3000:3000"
+    # command: "npm start"
+    tty: true
