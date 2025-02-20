@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+}
+/* body{
+  position: relative;
+} */
+
+input, button{
+    padding: 16px;
+    font-size: large;
+}
+
+canvas {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    display: block;
+}
+.dialog-box {
+position: absolute;
+top: 600px;
+left: 0;
+right: 0;
+width: 80%;
+max-width: 800px;
+margin: 20px auto;
+/* margin-top: 600px; */
+background-color: rgba(0, 0, 0, 0.8);
+border: 2px solid #fff;
+border-radius: 10px;
+padding: 20px;
+color: #fff;
+font-family: "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+
+.character-name {
+background-color: #4a4a4a;
+padding: 5px 15px;
+margin-bottom: 10px;
+border-radius: 5px;
+display: inline-block;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+.thinking {
+    /* background-color: #4a4a4a; */
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+
+.dialog-text {
+line-height: 1.6;
+font-size: 1.1em;
+padding: 10px;
+}
+
+.console {
+    margin: 30px; 
+}
+
+
+.balloon-chat {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 30%;
+    pointer-events: none;
+    }
+    /* 左の吹き出し */
+    .balloon-chat.left { 
+    flex-direction: row; /* 左から右に並べる */
+    flex-direction: column;
+    pointer-events: none;
+
+    }
+    /* 右の吹き出し */
+    .balloon-chat.right { 
+    flex-direction: row-reverse; /* 右から左に並べる */
+    }
+    /* 吹き出しの入力部分の作成 */
+    .chatting {
+    position: relative;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background: #ccffcc; 
+    text-align: left; 
+    border-radius: 12px; 
+    pointer-events: none;
+    }
+    /* 吹き出しの三角部分の作成 */
+    .chatting::after {
+    content: "";
+    border: 15px solid transparent;
+    border-top-color: #ccffcc;
+    position: absolute;
+    top: 10px; 
+    }
+    .left .chatting::after {
+    left: -15px;
+    }
+    .right .chatting::after {
+    right: -15px; 
+    } 
+/* アニメーション効果（オプション） */
+/* .dialog-text {
+opacity: 0;
+animation: fadeIn 0.5s ease forwards;
+} */
+
+/* @keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+} */
