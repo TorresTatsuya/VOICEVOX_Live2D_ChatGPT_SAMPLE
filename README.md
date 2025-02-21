@@ -1,7 +1,10 @@
 # VOICEVOX_Live2D_ChatGPT_SAMPLE
 
+# DEMO
+
+
 # ライセンス
-– VOICEVOX:春日部つむぎ
+- VOICEVOX:春日部つむぎ
 
 # 参考文献
 - https://docs.live2d.com/cubism-sdk-tutorials/sample-build-web/
